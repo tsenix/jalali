@@ -3282,27 +3282,6 @@
     }
     window.addEventListener("load", initializeSizeItem);
     window.addEventListener("resize", initializeSizeItem);
-    function initializeSizeItemBreadcumbs() {
-        const breadcrumbs = document.querySelector(".breadcrumbs");
-        if (breadcrumbs) {
-            const containerWidth = breadcrumbs.querySelector(".breadcrumbs ._container").offsetWidth;
-            const listItems = breadcrumbs.querySelectorAll("li");
-            const lastElement = listItems[listItems.length - 1];
-            let listItemsWidth = 0;
-            let firstItemsWidth = 0;
-            lastElement.style.width = null;
-            for (let i = 0; i < listItems.length; i++) if (i === listItems.length - 1) listItemsWidth += listItems[i].offsetWidth; else {
-                listItemsWidth += listItems[i].offsetWidth + 10;
-                firstItemsWidth += listItems[i].offsetWidth + 10;
-            }
-            if (listItemsWidth >= containerWidth) {
-                const widthLastElement = containerWidth - firstItemsWidth - 20;
-                lastElement.style.width = widthLastElement + "px";
-            }
-        }
-    }
-    window.addEventListener("load", initializeSizeItemBreadcumbs);
-    window.addEventListener("resize", initializeSizeItemBreadcumbs);
     window["FLS"] = true;
     menuInit();
 })();
