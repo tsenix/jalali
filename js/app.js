@@ -3262,7 +3262,7 @@
     }));
     function getWidthContainer() {
         const widthWindow = window.innerWidth;
-        if (widthWindow < 992) return (widthWindow - 40) / 2 - 7; else if (widthWindow < 1280) return 960 / 3 - 11; else if (widthWindow < 1440) return 1200 / 4 - 14; else return 1440 / 4 - 14;
+        if (widthWindow < 992) return (widthWindow - 40) / 2 - 9; else if (widthWindow < 1280) return 960 / 3 - 11; else if (widthWindow < 1440) return 1200 / 4 - 14; else return 1440 / 4 - 14;
     }
     function initializeSizeItem() {
         const advantagesItems = document.querySelectorAll(".advantages__item");
@@ -3271,13 +3271,15 @@
             const item = advantagesItems[i];
             const widthItem = item.offsetWidth;
             const titleItem = item.querySelector(".advantages__item-text");
-            if (widthItem > getWidthContainer()) titleItem.style.width = parseInt(getWidthContainer() - 11) + "px"; else titleItem.style.width = null;
+            titleItem.style.width = null;
+            if (widthItem > getWidthContainer()) titleItem.style.width = parseInt(getWidthContainer() - 12) + "px"; else titleItem.style.width = null;
         }
         for (let i = 0; i < catalogItems.length; i++) {
             const item = catalogItems[i];
             const widthItem = item.offsetWidth;
             const titleItem = item.querySelector(".catalog__item-title");
-            if (widthItem > getWidthContainer()) titleItem.style.width = parseInt(getWidthContainer() - 2) + "px"; else titleItem.style.width = null;
+            titleItem.style.width = null;
+            if (widthItem > getWidthContainer()) titleItem.style.width = parseInt(getWidthContainer() - 4) + "px"; else titleItem.style.width = null;
         }
     }
     window.addEventListener("load", initializeSizeItem);

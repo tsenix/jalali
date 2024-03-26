@@ -1245,8 +1245,8 @@ h6 {
 
 .feedbacks__item-wrapper {
   padding: 25px 20px;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
 }
 
