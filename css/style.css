@@ -1278,7 +1278,7 @@ h6 {
 .feedbacks__item-text {
   display: block;
   display: -webkit-box;
-  height: 126px;
+  height: 125px;
   font-size: 16px;
   line-height: 130%;
   overflow: hidden;
@@ -2890,7 +2890,7 @@ h6 {
   }
 
   .feedbacks__item-text {
-    height: 105px;
+    height: 104px;
     -webkit-line-clamp: 5;
   }
 
