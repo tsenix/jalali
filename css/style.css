@@ -165,7 +165,6 @@ h6 {
   font-size: 30px;
   line-height: 130%;
   font-weight: 700;
-  text-transform: uppercase;
   text-align: center;
   word-wrap: break-word;
 }
@@ -753,7 +752,7 @@ h6 {
 }
 
 .footer__link {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 130%;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -761,7 +760,7 @@ h6 {
 
 .footer__author {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 130%;
 }
 
@@ -771,8 +770,8 @@ h6 {
 }
 
 .footer__column-title {
-  margin-bottom: 25px;
-  font-size: 30px;
+  margin-bottom: 30px;
+  font-size: 24px;
   line-height: 130%;
   font-weight: 700;
 }
@@ -800,7 +799,6 @@ h6 {
 .footer__list-title {
   font-size: 24px;
   line-height: 130%;
-  font-weight: 700;
 }
 
 .footer__list-links {
@@ -1025,7 +1023,6 @@ h6 {
   font-size: 18px;
   line-height: 130%;
   font-weight: 700;
-  text-transform: uppercase;
   overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -1272,7 +1269,6 @@ h6 {
   font-size: 22px;
   line-height: 130%;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .feedbacks__item-text {
@@ -2660,6 +2656,8 @@ h6 {
   }
 
   .footer__body {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     gap: 45px 21px;
   }
 
@@ -2695,10 +2693,6 @@ h6 {
     margin: 0;
   }
 
-  .footer__link {
-    font-size: 20px;
-  }
-
   .footer__link:hover {
     color: #9B39F7;
   }
@@ -2710,10 +2704,13 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    gap: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 
   .footer__author a:hover {
@@ -2730,6 +2727,10 @@ h6 {
 
   .footer__social:hover span {
     color: #9B39F7;
+  }
+
+  .footer__social span {
+    font-size: 24px;
   }
 
   .main-block {
@@ -3588,5 +3589,9 @@ h6 {
   .header__search-mobile {
     width: calc(100% - 103px);
     top: 5px;
+  }
+
+  .footer__social span {
+    font-size: 22px;
   }
 }
