@@ -1589,7 +1589,6 @@ h6 {
 .info h6 {
   font-weight: 700;
   line-height: 130%;
-  text-transform: uppercase;
 }
 
 .info h1 {
@@ -1712,7 +1711,6 @@ h6 {
 .course__body h6 {
   font-weight: 700;
   line-height: 130%;
-  text-transform: uppercase;
 }
 
 .course__body h1 {
@@ -1831,7 +1829,6 @@ h6 {
   font-size: 18px;
   line-height: 130%;
   font-weight: 700;
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -1927,7 +1924,6 @@ h6 {
   font-size: 21px;
   line-height: 130%;
   font-weight: 700;
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -1977,7 +1973,6 @@ h6 {
   font-size: 22px;
   line-height: 130%;
   font-weight: 700;
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -2021,7 +2016,6 @@ h6 {
 .page-blog__body h6 {
   font-weight: 700;
   line-height: 130%;
-  text-transform: uppercase;
 }
 
 .page-blog__body h1 {
@@ -2237,7 +2231,6 @@ h6 {
 .about__body h6 {
   font-weight: 700;
   line-height: 130%;
-  text-transform: uppercase;
 }
 
 .about__body h1 {
